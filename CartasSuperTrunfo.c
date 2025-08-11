@@ -16,10 +16,10 @@ int main() {
 
      // Cadastro da Carta 1
     printf("Digite o estado da Carta 1 (ex: Alagoas): ");
-    scanf("%s", &estado1);
+    scanf("%s", estado1);
 
     printf("Digite a cidade da Carta 1 (ex: Maceio): ");
-    scanf("%s", &cidade1);
+    scanf("%s", cidade1);
 
     printf("Digite o codigo da Carta 1 (ex: A01): ");
     scanf("%s", codigo1);
@@ -39,10 +39,10 @@ int main() {
      // Cadastro da Carta 2
 
     printf("Digite o estado da Carta 2 (ex: Alagoas): ");
-    scanf("%s", &estado2);
+    scanf("%s", estado2);
 
     printf("Digite a cidade da Carta 2 (ex: Maceio): ");
-    scanf("%s", &cidade2);
+    scanf("%s", cidade2);
 
     printf("\nDigite o codigo da Carta 2 (ex: B02): ");
     scanf("%s", codigo2);
