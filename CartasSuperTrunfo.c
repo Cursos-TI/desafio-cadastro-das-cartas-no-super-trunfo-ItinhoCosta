@@ -11,6 +11,7 @@ int main() {
     float pibPerCapita1;
 
     // Declaração das variáveis para a Carta 2
+    printf ("\n--》Digite os Dados da Carta 2《--\n")
     char codigo2[10], estado2[20], cidade2[50];
     int populacao2;
     float area2, pib2;
@@ -19,6 +20,7 @@ int main() {
     float pibPerCapita2;
 
      // Cadastro da Carta 1
+    printf ("\n--》Digite os Dados da Carta 1《--\n")
     printf("Digite o Estado da Carta 1 (ex: Alagoas): ");
     scanf("%s", estado1);
 
@@ -41,14 +43,14 @@ int main() {
     scanf("%d", &pontos_turisticos1);
 
      // Cadastro da Carta 2
-
+    printf ("\n--》Digite os Dados da Carta 2《--\n")
     printf("Digite o Estado da Carta 2 (ex: Alagoas): ");
     scanf("%s", estado2);
 
     printf("Digite a Cidade da Carta 2 (ex: Maceio): ");
     scanf("%s", cidade2);
 
-    printf("\nDigite o Codigo da Carta 2 (ex: B02): ");
+    printf("Digite o Codigo da Carta 2 (ex: B02): ");
     scanf("%s", codigo2);
 
     printf("Digite a Populacao da Carta 2: ");
