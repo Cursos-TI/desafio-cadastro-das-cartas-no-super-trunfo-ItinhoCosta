@@ -11,7 +11,6 @@ int main() {
     float pibPerCapita1;
 
     // Declaração das variáveis para a Carta 2
-    printf ("\n--》Digite os Dados da Carta 2《--\n")
     char codigo2[10], estado2[20], cidade2[50];
     int populacao2;
     float area2, pib2;
@@ -20,8 +19,8 @@ int main() {
     float pibPerCapita2;
 
      // Cadastro da Carta 1
-    printf ("\n--》Digite os Dados da Carta 1《--\n")
-    printf("Digite o Estado da Carta 1 (ex: Alagoas): ");
+    printf("\n--》Digite os Dados da Carta 1《--\n");
+    printf("\nDigite o Estado da Carta 1 (ex: Alagoas): ");
     scanf("%s", estado1);
 
     printf("Digite a Cidade da Carta 1 (ex: Maceio): ");
@@ -43,8 +42,8 @@ int main() {
     scanf("%d", &pontos_turisticos1);
 
      // Cadastro da Carta 2
-    printf ("\n--》Digite os Dados da Carta 2《--\n")
-    printf("Digite o Estado da Carta 2 (ex: Alagoas): ");
+    printf ("\n--》Digite os Dados da Carta 2《--\n");
+    printf("\nDigite o Estado da Carta 2 (ex: Alagoas): ");
     scanf("%s", estado2);
 
     printf("Digite a Cidade da Carta 2 (ex: Maceio): ");
@@ -73,7 +72,7 @@ pibPerCapita2 = pib2 / (float)populacao2;
 
      // Exibição dos dados cadastrados
     printf("\n--- Dados da Carta 1 ---\n");
-    printf("Estado: %s\n", estado1);
+    printf("\nEstado: %s\n", estado1);
     printf("Cidade: %s\n", cidade1);
     printf("Codigo: %s\n", codigo1);
     printf("Populacao: %d\n", populacao1);
@@ -84,7 +83,7 @@ pibPerCapita2 = pib2 / (float)populacao2;
     printf("PIB per Capita: %.2f\n", pibPerCapita1);
 
     printf("\n--- Dados da Carta 2 ---\n");
-    printf("Estado: %s\n", estado2);
+    printf("\nEstado: %s\n", estado2);
     printf("Cidade: %s\n", cidade2);
     printf("Codigo: %s\n", codigo2);
     printf("Populacao: %d\n", populacao2);
