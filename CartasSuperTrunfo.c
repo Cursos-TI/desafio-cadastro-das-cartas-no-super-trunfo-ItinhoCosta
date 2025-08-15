@@ -102,19 +102,45 @@ superPoder2 = (float)populacao2 + area2 + pib2 + (float)pontos_turisticos2 + (1.
     printf("PIB per Capita: %.2f\n", pibPerCapita2);
     printf("Super Poder: %.2f\n", superPoder2);
 
-    printf("\n-- Comparacao das Cartas --\n");                
-    printf("\n 1 - Carta 1 vence, 0 - Carta 2 vence\n");
+//Começo aqui o Módulo 3, onde trataremos da Lógica do Jogo. Exclui a forma de comparação do modo anterior, para ter uma comparação mais clara.
+//Será feito a comparação de todos os atributos.
 
-    printf("\n Populacao: %d\n", populacao1 > populacao2? 1: 0);
+    printf("\n-- Comparacao das Cartas (ATRIBUTO POPULAÇAO) --\n");
+    printf("\n Carta 1 - %s (%s): %lu\n", cidade1, estado1, populacao1);
+    printf("\n Carta 2 - %s (%s): %lu\n", cidade2, estado2, populacao2);
+    
+    if (populacao1 > populacao2) {
+        printf("\nResultado: Carta 1 %s (%s) Venceu!\n", estado1, cidade1);
+    } else if (populacao2 > populacao1) {
+        printf("\nResultado: Carta 2 %s (%s) Venceu!\n", estado2, cidade2);
+    } else {
+        printf("\nResultado: As Cartas Empataram!\n");
+    }
 
-    printf("Area: %d\n", area1 > area2 ? 1 : 0);         
-    printf("PIB: %d\n", pib1 > pib2 ? 1 : 0);    
-    printf("Pontos Turisticos: %d\n", pontos_turisticos1 > pontos_turisticos2? 1: 0);
+    printf("\n-- Comparacao das Cartas (ATRIBUTO AREA) --\n");
+    printf("\n Carta 1 - %s (%s): %lu\n", cidade1, estado1, area1);
+    printf("\n Carta 2 - %s (%s): %lu\n", cidade2, estado2, area2);
+    
+    if (area1 > area2) {
+        printf("\nResultado: Carta 1 %s (%s) Venceu!\n", cidade1, estado1);
+    } else if (area2 > area1) {
+        printf("\nResultado: Carta 2 %s (%s) Venceu!\n", cidade2, estado2);
+    } else {
+        printf("\nResultado: As Cartas Empataram!\n");
+    }
 
-    printf("Densidade Populacional: %d\n", densidadePopulacional1 < densidadePopulacional2? 1: 0);  
-    printf("PIB per Capita: %d\n", pibPerCapita1 > pibPerCapita2? 1: 0);
-
-    printf("Super Poder: %d\n", superPoder1 > superPoder2? 1: 0);
+    printf("\n-- Comparacao das Cartas (ATRIBUTO PIB) --\n");
+    printf("\n Carta 1 - %s (%s): %lu\n", cidade1, estado1, pib1);
+    printf("\n Carta 2 - %s (%s): %lu\n", cidade2, estado2, pib2);
+    
+    if (pib1 > pib2) {
+        printf("\nResultado: Carta 1 %s (%s) Venceu!\n", cidade1, estado1);
+    } else if (pib2 > pib1) {
+        printf("\nResultado: Carta 2 %s (%s) Venceu!\n", cidade2, estado2);
+    } else {
+        printf("\nResultado: As Cartas Empataram!\n");
+    }
+    
 
     return 0;
 }
