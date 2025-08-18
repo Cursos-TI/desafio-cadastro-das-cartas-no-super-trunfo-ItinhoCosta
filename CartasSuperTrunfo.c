@@ -102,7 +102,7 @@ superPoder2 = (float)populacao2 + area2 + pib2 + (float)pontos_turisticos2 + (1.
     printf("PIB per Capita: %.2f\n", pibPerCapita2);
     printf("Super Poder: %.2f\n", superPoder2);
 
-//Começo aqui o Módulo 3, onde trataremos da Lógica do Jogo. Exclui a forma de comparação do modo anterior, para ter uma comparação mais clara.
+//Começo aqui o Módulo 3, onde trataremos da Lógica do Jogo.
 //Será feito a comparação de todos os atributos.
 
     printf("\n-- Comparacao das Cartas (ATRIBUTO POPULAÇAO) --\n");
